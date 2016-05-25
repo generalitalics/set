@@ -1,0 +1,11 @@
+# set
+#Вывести колличество слов, входящих в строку (не повторяющиеся)
+
+def count_words(text, words):
+    spam = 0
+    for i in words:
+        spam += text.lower().count(i)
+        print(spam)
+    return spam
+
+print(count_words("How aresjfhdskfhskd you?", {"how", "are", "you", "hello"}))
